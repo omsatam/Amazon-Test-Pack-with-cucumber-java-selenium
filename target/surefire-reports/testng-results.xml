@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-03T16:01:33 IST" name="Surefire suite" finished-at="2023-02-03T16:05:57 IST" duration-ms="263596">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-03T16:01:33 IST" name="Surefire test" finished-at="2023-02-03T16:05:57 IST" duration-ms="263596">
+      <class name="cucumberOptions.TestNgTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:01:34 IST" name="setUpClass" finished-at="2023-02-03T16:01:35 IST" duration-ms="1020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6dd79214]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:01:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-03T16:02:19 IST" duration-ms="44371" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User able to sort items based on Given Price Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify diffrent Filters on Search Results Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Displayed price 10140 is grater than selected maximum price Under 10000 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Displayed price 10140 is grater than selected maximum price Under 10000 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at Pages.ResultPage.changePriceRangeVerifyResults(ResultPage.java:183)
+at stepDefinition.SearchresultsPageDefinition.userChangesToGivenPriceRangeGivenPriceRangeAndVerifyResults(SearchresultsPageDefinition.java:73)
+at ✽.User Changes to Given Price Range 1 and verify results(file:///C:/Users/osatam/learning/Java/cucumber/Amazon/Amazon/src/test/java/features/SearchResults.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:02:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-03T16:03:08 IST" duration-ms="48553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User able to sort items based on Given Price Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify diffrent Filters on Search Results Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:03:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-03T16:03:50 IST" duration-ms="42329" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User able to sort items based on Given Price Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify diffrent Filters on Search Results Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Displayed price 12990 is not in selected price range of 15000 to 20000 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Displayed price 12990 is not in selected price range of 15000 to 20000 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at Pages.ResultPage.changePriceRangeVerifyResults(ResultPage.java:220)
+at stepDefinition.SearchresultsPageDefinition.userChangesToGivenPriceRangeGivenPriceRangeAndVerifyResults(SearchresultsPageDefinition.java:73)
+at ✽.User Changes to Given Price Range 3 and verify results(file:///C:/Users/osatam/learning/Java/cucumber/Amazon/Amazon/src/test/java/features/SearchResults.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:03:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-03T16:05:02 IST" duration-ms="71749" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User able to sort items based on Given Price Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify diffrent Filters on Search Results Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Displayed price 17740 is not in selected price range of 20000 to 30000 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Displayed price 17740 is not in selected price range of 20000 to 30000 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at Pages.ResultPage.changePriceRangeVerifyResults(ResultPage.java:220)
+at stepDefinition.SearchresultsPageDefinition.userChangesToGivenPriceRangeGivenPriceRangeAndVerifyResults(SearchresultsPageDefinition.java:73)
+at ✽.User Changes to Given Price Range 4 and verify results(file:///C:/Users/osatam/learning/Java/cucumber/Amazon/Amazon/src/test/java/features/SearchResults.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:05:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-03T16:05:56 IST" duration-ms="54706" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User able to sort items based on Given Price Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify diffrent Filters on Search Results Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Displayed price 29990 is less than selected minimum price Over 30000 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Displayed price 29990 is less than selected minimum price Over 30000 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at Pages.ResultPage.changePriceRangeVerifyResults(ResultPage.java:200)
+at stepDefinition.SearchresultsPageDefinition.userChangesToGivenPriceRangeGivenPriceRangeAndVerifyResults(SearchresultsPageDefinition.java:73)
+at ✽.User Changes to Given Price Range 5 and verify results(file:///C:/Users/osatam/learning/Java/cucumber/Amazon/Amazon/src/test/java/features/SearchResults.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNgTestRunner@5dd6264]" started-at="2023-02-03T16:05:56 IST" name="tearDownClass" finished-at="2023-02-03T16:05:57 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestNgTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
